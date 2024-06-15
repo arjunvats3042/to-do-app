@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daily Goal App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Orbitron:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 class="title">Focus on <span class="title_today">Today</span></h1>
+
+    <div class="app_container">
+      <div class="subtitle">
+        <h2 class="subtitle_h2">Live in the Now</h2>
+        <img class="sun_icon" src="Sun3.svg" />
+      </div>
+      <p class="progress_label">Raise the bar by completing your goals!!</p>
+      <div class="progress_bar">
+        <div class="progress_value">
+          <span class="spn">0/1__completed</span>
+        </div>
+      </div>
+      <p class="error_label">Minimum 1 goal is required!!</p>
+      <div class="inputs">
+        <div class="goal">
+          <div class="custom_checkbox">
+            <img class="check_icon" src="check-icon.svg" />
+          </div>
+          <input class="goal_inp" type="text" placeholder="Write your goal..." />
+        </div>
+      </div>
+      <div class="add_sub">
+        <button class="add" onclick="add_goal()">Goal++</button>
+        <button class="sub" onclick="sub_goal()">Goal--</button>
+      </div>
+        <p class="quote">"Move one step ahead, today!!"</p>
+        <p class="made_with">Made with ♥ by Arjun</p>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
